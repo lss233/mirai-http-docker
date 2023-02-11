@@ -19,6 +19,6 @@ EOF
 chmod +x ./mcl
 
 ./mcl --update-package net.mamoe:mirai-api-http --channel stable-v2 --type plugin
-./mcl --update-package xyz.cssxsh.mirai:mirai-device-generator --channel stable-v2 --type plugin
+./mcl --update-package xyz.cssxsh.mirai:mirai-device-generator --channel stable --type plugin
 ./mcl --dry-run
 
