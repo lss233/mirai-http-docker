@@ -22,4 +22,6 @@ chmod +x ./mcl
 ./mcl --update-package xyz.cssxsh.mirai:mirai-device-generator --channel stable --type plugin
 ./mcl --boot-only
 ./mcl --dry-run
-
+./mcl << EOF
+exit
+EOF
