@@ -3,7 +3,7 @@ name: 'Docker build'
 on:
   workflow_dispatch:
   push:
-    branches: [ "ci" ]
+    branches: [ "master" ]
 
 jobs:
   publish:
