@@ -25,3 +25,5 @@ chmod +x ./mcl
 ./mcl << EOF
 exit
 EOF
+
+tree -d ../app
