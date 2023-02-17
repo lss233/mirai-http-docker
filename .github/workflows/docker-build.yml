@@ -16,25 +16,25 @@ jobs:
       - name: Setting up mcl-installer
         run: |
           bash ./script/install.sh
-        -
-          name: Set up QEMU
-          uses: docker/setup-qemu-action@v2
-        -
-          name: Set up Docker Buildx
-          uses: docker/setup-buildx-action@v2
-        -
-          name: Login to DockerHub
-          uses: docker/login-action@v2
-          with:
-            username: ${{ secrets.DOCKERHUB_USERNAME }}
-            password: ${{ secrets.DOCKERHUB_TOKEN }}
-        -
-          name: Build and push
-          uses: docker/build-push-action@v3
-          with:
-            context: '.'
-            file: './Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-            push: true
-            tags: |
-              lss233/mirai-http:latest-ci
+      -
+        name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      -
+        name: Login to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: '.'
+          file: './Dockerfile'
+          platforms: 'linux/amd64,linux/arm64'
+          push: true
+          tags: |
+            lss233/mirai-http:latest-ci
