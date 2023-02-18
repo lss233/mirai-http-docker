@@ -8,4 +8,4 @@ WORKDIR /app
 
 COPY ./app /app/
 
-ENTRYPOINT ["/app/mcl", "--disable-module", "updater"]
+ENTRYPOINT ["/app/mcl"]
