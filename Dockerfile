@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM azul/zulu-openjdk-debian:17-latest
 
 LABEL "repository"="https://github.com/lss233/mirai-http-docker" \
   "homepage"="https://github.com/lss233/mirai-http-docker" \
