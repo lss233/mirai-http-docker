@@ -10,6 +10,9 @@ wget "https://github.com/iTXTech/mcl-installer/releases/download/${MCL_VERSION}/
 chmod +x ./mcl-installer
 
 mkdir app && cd app
+# 安装临时的 fix-protocol-version 插件
+mkdir plugins
+wget https://github.com/cssxsh/fix-protocol-version/releases/download/v1.0.0/fix-protocol-version-1.0.0.mirai2.jar -o plugins/fix-protocol-version-1.0.0.mirai2.jar
 
 "../mcl-installer" << EOF
 N
