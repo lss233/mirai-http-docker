@@ -22,8 +22,9 @@ EOF
 
 chmod +x ./mcl
 
-./mcl --update-package net.mamoe:mirai-core --channel stable --version 2.15.0-M1
-./mcl --update-package net.mamoe:mirai-console --channel stable --version 2.15.0-M1
+./mcl --update-package net.mamoe:mirai-console --channel     maven-prerelease
+./mcl --update-package net.mamoe:mirai-core-all --channel maven-prerelease
+./mcl --update-package net.mamoe:mirai-console-terminal --channel maven-prerelease
 ./mcl --update-package net.mamoe:mirai-api-http --channel stable-v2 --type plugin
 ./mcl --update-package xyz.cssxsh.mirai:mirai-device-generator --channel stable --type plugin
 ./mcl --boot-only
